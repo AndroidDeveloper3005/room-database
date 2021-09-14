@@ -10,7 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.himel.androiddeveloper3005.git.roomdatabase.R
-import com.himel.androiddeveloper3005.git.roomdatabase.data.UserViewModel
+import com.himel.androiddeveloper3005.git.roomdatabase.viewmodel.UserViewModel
 import kotlinx.android.synthetic.main.fragment_list.view.*
 
 class ListFragment : Fragment() {

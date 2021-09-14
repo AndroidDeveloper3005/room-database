@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.himel.androiddeveloper3005.git.roomdatabase.model.User
 
 //contain the database holder and serves as the main access point for
 // underlying connection to your apps persisted , relational data

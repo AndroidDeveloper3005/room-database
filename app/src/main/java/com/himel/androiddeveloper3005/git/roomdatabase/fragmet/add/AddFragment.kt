@@ -11,11 +11,10 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.himel.androiddeveloper3005.git.roomdatabase.R
-import com.himel.androiddeveloper3005.git.roomdatabase.data.User
-import com.himel.androiddeveloper3005.git.roomdatabase.data.UserViewModel
+import com.himel.androiddeveloper3005.git.roomdatabase.model.User
+import com.himel.androiddeveloper3005.git.roomdatabase.viewmodel.UserViewModel
 import kotlinx.android.synthetic.main.fragment_add.*
 import kotlinx.android.synthetic.main.fragment_add.view.*
-import kotlinx.android.synthetic.main.fragment_list.view.*
 
 class AddFragment : Fragment() {
     private lateinit var userViewModel: UserViewModel

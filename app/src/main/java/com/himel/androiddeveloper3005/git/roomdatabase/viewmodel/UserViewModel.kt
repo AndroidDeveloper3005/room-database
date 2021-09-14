@@ -1,9 +1,12 @@
-package com.himel.androiddeveloper3005.git.roomdatabase.data
+package com.himel.androiddeveloper3005.git.roomdatabase.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
+import com.himel.androiddeveloper3005.git.roomdatabase.data.UserDatabase
+import com.himel.androiddeveloper3005.git.roomdatabase.repository.UserRepository
+import com.himel.androiddeveloper3005.git.roomdatabase.model.User
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
@@ -21,6 +24,12 @@ class UserViewModel(application: Application) : AndroidViewModel(application){
         viewModelScope.launch (Dispatchers.IO){
             repository.addUser(user)
 
+        }
+    }
+
+    fun  updateUser(user: User){
+        viewModelScope.launch(Dispatchers.IO) {
+            repository.updateUser(user)
         }
     }
 }
